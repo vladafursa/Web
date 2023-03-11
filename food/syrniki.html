@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="syrniki.css">
+    <title>Favourite food</title>
+</head>
+<body>
+   <h1 class="sticky">Сырники(syrniki or pancakes made frome cottage cheese)</h1> 
+   <h2>Introduction</h2>
+   <div>
+    <p>
+        Syrniki are these delicious, pillowy-soft, pancakes, made out of farmer’s cheese, also known as tvorog. They are light and fluffy in the center, with a delicate crust on the outside.
+
+Syrniki make a perfect breakfast. While you’re enjoying the most delicious pancakes, you’re also getting a ton of protein. To make it even healthier, top your syrniki with fresh berries or fruit.
+
+You can also treat syrniki as a healthy dessert. Topped with spoonful of sour cream and fruit jam, they can be enjoyed hot or cold.
+    </p>
+   </div>
+   <h2>Photos</h2>
+   <div id="slider"><img src="" width="600" height="600"></div>
+   <script>
+    const images =['сырники.jpeg','сырники1.jpeg','syrniki0.jpg'];
+    let slider = document.querySelector('#slider');
+    let img = slider.querySelector('img');
+    let i=0;
+    window.setInterval(function(){
+        img.src=images[i];
+        i++;
+        if (i===images.length){
+            i=0;
+        }
+    },1000);
+   </script>
+<!--
+    <p id="photos">
+   <img src="сырники.jpeg" width="300" height="300"/>
+   <img src="сырники1.jpeg" width="300" height="300" >
+   <img src="syrniki0.jpg" width="300" height="300">
+   </p>    
+-->
+   <h2>Ingredients</h2>
+   <div id="table">
+   <table border="1">
+    <tr>
+        
+        <th scope="col">#</th>
+        <th scope="col" id="1">Ingredient name</th>
+        <th scope="col">Amount</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Farmer's Cheese or Tvorog</td>
+        <td>150g</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Egg Yolk</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Flour plus more for coating</td>
+        <td>20g</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Salt</td>
+        <td>a pinch</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Vanilla Extract</td>
+        <td>0.5tsp</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Sugar</td>
+        <td>10g</td>
+    </tr>
+</table>
+</div>
+<h2>Recipe</h2>
+<p>
+    Place all the tvorog in a saucepan and mix it with a fork, so that there are no large lumps left. Crack the eggs into it, pour in the sugar, and mix everything thoroughly.
+    Add 5 heaping tablespoons of flour and mix thoroughly. You can add a little more flour and the syrniki will then turn out more dense. Or a little less flour can be added, and the syrniki will be more tender. Mix until you have a homogeneous mass.
+    Put a frying pan over medium heat and pour the sunflower oil in it.
+    Put a little flour on a plate. Sculpt a few small balls from the tvorog mixture and put them on the plate. It’s better to mold 4-5 balls at a time ‒ as many as will fit simultaneously in the pan.
+    Then flatten them into small cakes (they should not be too thin) and put them in the frying pan.
+    Fry the syrniki 1-2 minutes until a golden crust appears. Then turn them over to the other side and also brown until golden.
+    Repeat until the mixture is finished.</p>
+
+</body>
+<footer>Website made by Vlada Fursa</footer>
+</html>
