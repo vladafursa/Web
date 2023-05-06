@@ -1,0 +1,601 @@
+
+*{
+  text-decoration: none;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+  font-weight: 700;
+}
+/*sticky line on the top*/
+.sticky{
+    width:100%;
+    height:70px;
+    background:  rgb(234, 17, 17);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position:sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.sticky * {
+    margin: 0;
+  }
+  
+.logo{
+  display: block; 
+  margin: 0 auto;
+}
+/*content*/
+.content h1, h2 {
+  text-align: center;
+  padding:20px 0 30px;
+}
+.content, .historyPageContent{
+  font-size:40px;
+  margin: 5px 45px;
+  padding:25px;
+  text-align: justify;
+  color:rgb(25, 25, 25);
+}
+
+/*images on history page*/
+.historyPageContent img{
+  width:700px;
+  height:400px;
+  display: block;
+  border-radius: 15px;
+  margin: 40px auto;
+}
+.menu-btn{
+  position:absolute;
+  color:#ffffff;
+  font-size:35px;
+  margin:25px;
+  cursor:pointer;
+  transition: 0.6s ease;
+}
+
+/*side navigation*/
+.side-bar{
+  background:rgb(213, 13, 13);
+  width: 260px;
+  height: 100%;
+  position:fixed;
+  top:0;
+  left:-100%;
+  overflow-y:auto;
+  /*overflow-x: auto;*/
+  transition:0.6s ease;
+  transition-property: left;
+}
+.side-bar.active{
+  left:0;
+}
+.side-bar .menu{
+  width:100%;
+  margin-top:100px;
+}
+.side-bar .menu .item{
+  position:relative;
+  cursor:pointer;
+}
+.side-bar .menu .logo-side{
+  display:block;
+  padding: 5px 60px;
+  margin:0 auto 10px auto;
+}
+.side-bar .menu .item a{
+  color:#fff;
+  font-size:27px;
+  text-decoration:none;
+  padding: 5px 40px;
+  line-height:60px;
+}
+.side-bar .menu .item a:hover{
+  padding-left: 60px;
+  font-size:26px;
+  transition:0.3s ease-in;
+  transition:0.5s ease-out;
+  
+}
+.close-btn{
+  position:absolute;
+  color:#fff;
+  font-size:25px;
+  right:0;
+  margin:25px;
+  cursor:pointer;
+}
+
+/*parallax effect*/
+.parallax, .parallax-pancakes, .parallax-cake, .parallax-spaghetti, .parallax-soup{
+  /* The image used */
+  /* Full height */
+  min-height: 500px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax{
+  background-image: url('Images/background.jpg');
+}
+.parallax-pancakes {
+  /* The image used */
+  background-image: url('Images/pancakes-2.jpeg');
+}
+.parallax-cake{
+  background-image: url('Images/carrot-cake-2.jpeg');
+}
+.parallax-spaghetti{
+  background-image: url('Images/spaghetti-3.jpeg');
+}
+.parallax-soup{
+  background-image: url('Images/potato-soup-3.jpeg');
+}
+.parallax h1, .parallax-pancakes h1, .parallax-cake h1, .parallax-spaghetti h1, .parallax-soup h1{
+  padding-top: 180px;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  font-size: 100px;
+  font-style: bold;
+  text-shadow: 3px 3px 3px rgb(104, 103, 103);
+}
+/*carousel of images*/
+.wrapper{
+  margin:0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top:50%;
+  color: white;
+  height:46px;
+  width:46px;
+  font-size: 2.2rem;
+  text-align:center;
+  line-height: 46px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  transform:translateY(-50%);
+  cursor: pointer;
+}
+.wrapper i:first-child{
+  left:-23px;
+  display:none;
+}
+.wrapper i:last-child{
+  right:-23px;
+}
+.wrapper .carousel{
+  overflow-x: scroll;
+  white-space:nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+}
+.carousel img{
+  height:380px;
+  object-fit:cover;
+  margin:0 7px 0 7px;
+  width:calc(100%/3 - 10px*2);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+.carousel img:last-child{
+  margin-right: 0px;
+}
+
+/*footer*/
+footer{
+  background-color:  rgb(139, 0, 7);
+  padding:70px 0;
+}
+.footer-items{
+  max-width:1000px;
+  margin: auto;
+  font-size: 28px;
+}
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  
+}
+.row ul{
+  justify-content: center;
+  list-style: none;
+}
+.row ul h3{
+  color:white;
+  margin:10px 50px;
+  text-decoration: none;
+}
+.row ul li a{
+  color:white;
+  margin:50px;
+  text-decoration: none;
+  font-size:20px;
+  opacity:0.8;
+  transition:0.6s;
+  font-size: 25px;
+}
+.col{
+  width:50%;
+  padding: 0 50px;
+}
+#socialMedia i{
+  font-size: 30px;
+  padding:5px;
+}
+.row ul li a:hover{
+opacity:1;
+}
+
+/*quiz*/
+.app{
+  border:solid 5px rgba(197, 35, 35, 0.402);
+  width:90%;
+  max-width: 600px;
+  margin:20px auto 40px;
+  padding:30px;
+  border-radius: 10px;
+}
+.app h1{
+  font-size:35px;
+  color:firebrick;
+  font-weight: 600;
+  border-bottom: 1px solid brown;
+  padding-bottom: 30px;
+}
+.quiz{
+  padding: 20px 0;
+}
+.quiz h2{
+  font-size: 18px;
+  color:firebrick;
+  font-weight: 600;
+}
+.btn{
+  background: #fff;
+  color:black;
+  font-size: 22px;
+  width: 100%;
+  border:1px solid rgb(255, 105, 88);
+  padding:10px;
+  margin:10px;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+background: rgba(244, 135, 87, 0.205);
+}
+.btn:disabled{
+  cursor:no-drop;
+}
+#next-btn{
+  background: rgb(255, 105, 88);
+  font-size:22px;
+  width:150px;
+  border: 0;
+  padding: 10px;
+  margin:20px auto 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+ 
+}
+
+.correct{
+  background: rgba(51, 218, 51, 0.602);
+}
+.incorrect{
+  background: rgba(234, 1, 1, 0.685);
+}
+
+/*cards*/
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards{
+  width:40%;
+  display: inline-block;
+  margin:7% 5%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  cursor:pointer;
+  font-size: 30px;
+  transition: 0.2s;
+}
+.cards:hover{ 
+  transform: translateY(-0.5%);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+.card-image{
+width:100%;
+border-radius: 10px 10px 0 0;
+}
+.card-title{
+  text-align: center;
+  padding: 10px;
+}
+.card-description{
+  text-align: center;
+  padding: 10px;
+}
+.card-button{
+  display: block;
+  width: 95%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 32px;
+  text-align: center;
+  color: crimson;
+  background-color: bisque;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.card-button span{
+  margin-left: 10px;
+  transition: 0.2s;
+}
+.card-button:hover, .card-button:active{
+  background-color: antiquewhite;
+}
+.card-button:hover span, .card-button:active span{
+  margin-left: 25px;
+}
+
+/*filter*/
+.list{
+  margin:30px auto 0;
+  width: 90%;
+  text-align: center;
+}
+.list li{
+  margin:10px auto;
+  display: inline-block;
+  font-size: 40px;
+  padding: 8px 12px;
+  background-color: rgba(220, 20, 60, 0.694);
+  color: #fff;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 0.3s;
+}
+.list li:hover{
+  background-color: rgba(220, 20, 60, 0.892);
+  padding: 11px 15px;
+}
+.list li.active{
+  background-color: crimson;
+  padding: 13px 17px;
+}
+/*tables with ingredients*/
+table{
+  text-align: center;
+  width: 600px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;    
+  border-collapse: collapse;
+  padding:10px;
+  margin-bottom:30px;
+  margin-top:40px;
+  font-size: 25px;
+}
+#table-pancakes{
+  background-color: rgb(249, 231,210);
+  color: rgb(151,58,33);
+  border: 10px double rgb(151,58,33);
+}
+#table-cake{
+  background-color: rgb(253, 245,226);
+  color: rgb(123,66,31);
+  border: 10px double rgb(123,66,31);
+}
+#table-spaghetti{
+  background-color: rgb(248, 219,182);
+  color: rgb(184,69,31);
+  border: 10px double rgb(184,69,31);
+}
+#table-soup{
+  background-color: rgb(250, 229,177);
+  color: rgb(161,95,37);
+  border: 10px double rgb(161,95,37);
+}
+.img-in-recipies{
+  width:70%;
+  display: block;
+  margin:15px auto;
+}
+.recipies-content{
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+}
+.recipies-content p{
+  margin: 5px 8%;
+  font-size: 35px;
+}
+.recipies-content h1, h2 {
+text-align: center;
+}
+#soup{
+  width:45%;
+}
+iframe{
+  display: block;
+  margin:20px auto;
+  padding: 20px;
+  width:560px;
+  height:315px;
+}
+
+.advice img{
+  width:300px;
+  height:300px;
+}
+
+#change-img{
+  display:block;
+  width:500px;
+  height:500px;
+  padding: 25px;
+  margin: 0 auto;
+  cursor: pointer;
+
+}
+
+.advice-img{
+  width:500px;
+  height:500px;
+  padding: 25px;
+  display: block;
+  margin:10px auto;
+
+}
+/*for tablets*/
+@media screen and (max-width:900px) {
+  .parallax h1, .parallax-pancakes h1, .parallax-cake h1, .parallax-spaghetti h1, .parallax-soup h1{
+    padding-top: 200px;
+    font-size: 100px;
+  }
+  .side-bar .menu .item a{
+    font-size:30px;
+  }
+  .app, .btn,#next-btn{
+    font-size: 18px;
+  }
+  .carousel img{
+    width:calc(100%/2 - 14px); 
+  }
+  .content, .historyPageContent{
+    font-size: 30px;
+  }
+  .historyPageContent img{
+    height: 100%;
+    width: 100%;
+  }
+  .app,.btn,#next-btn{
+    font-size: 22px;
+  }
+  .list li{
+    font-size:30px;
+    padding: 7px 8px;
+  }
+  .list li.active{
+    padding: 9px 10px;
+  }
+  
+}
+/*for mobile phones*/
+@media screen and (max-width:550px) {
+  .parallax, .parallax-pancakes, .parallax-cake, .parallax-spaghetti, .parallax-soup{
+    min-height: 250px; 
+  }
+
+  
+  .parallax h1, .parallax-pancakes h1, .parallax-cake h1, .parallax-spaghetti h1, .parallax-soup h1{
+    padding-top: 80px;
+    font-size: 50px;
+  }
+  .side-bar .menu .item a{
+    font-size:22px;
+  }
+  .carousel img{
+    width:100%; 
+  }
+  .content, .historyPageContent,.row ul li a{
+    font-size: 16px;
+  }
+
+  .historyPageContent img{
+    height: 100%;
+    width: 100%;
+  }
+  footer{
+    padding: 20px 0;
+  }
+  .row ul {
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    }
+  
+  
+  #socialMedia i{
+    font-size: 20px;
+  }
+  #socialMedia, #footer-navigation {
+    float: center;
+    width: auto;
+  }
+  .col{
+    width:100%;
+  }
+  .footer-items, .row {
+    justify-content: center;
+  }
+  .app, .btn,#next-btn{
+    font-size: 16px;
+  }
+  .list li{
+    font-size:20px;
+    padding: 5px 6px;
+  }
+  .list li.active{
+    padding: 7px 8px;
+  }
+  table{
+    width:300px;
+    font-size: 16px;
+  }
+  iframe{
+    width: 300px;
+    height: 180px;
+  }
+  .recipies-content p{
+    font-size: 18px;
+    text-align: justify;
+  }
+  .recipies-content{
+    font-size: 20px;
+    text-align: justify;
+  }
+  #change-img{
+    width:300px;
+    height:300px;
+  }
+  .advice-img{
+    width:300px;
+    height:300px;
+  }
+  .content, .historyPageContent{
+    margin: 5px 25px;
+    padding:10px;
+  }
+  .content h1, h2 {
+    padding:5px 0 7px;
+  }
+  .cards{
+    font-size:22px;
+  }
+  .card-title h1, .card-button{
+    font-size:27px;
+  }
+}
+
