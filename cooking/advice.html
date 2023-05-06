@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking website</title>
+    <!--link to styling-->
+  <link rel="stylesheet" href="stylesheet.css">
+    <!--link for icons-->
+  <script src="https://kit.fontawesome.com/b70fb90308.js" crossorigin="anonymous"></script>
+    <!--link from google fonts to upload a font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--sticky menu with navigation on it-->
+<div class="sticky">
+    <div class="menu-btn"> 
+            <!--icom of menu-->
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <!--closing icon-->
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+            <div class="menu">
+            <!--inline style to avoid changing by other classes-->
+            <div class="logo-side"><img src="Images/logo-menu.png" width="120px" height="120px" alt="logo"></div>
+                <div class="item"><a href="mainPage.html"><i>Main</i></a></div>
+                <div class="item"><a href="history.html"><i>History</i></a></div>
+                <div class="item"><a href="Recipies.html"><i>Recipies</i></a></div>
+                <div class="item"><a href="advice.html"><i>Advice</i></a></div>
+            </div>
+            </div>
+    <div class="logo"> 
+        <!--inline style to avoid changing by other classes-->
+        <img src="Images/logo.png" width="100px" height="50px" alt="logo">
+    </div>
+</div>
+<!--parallax effect-->
+<div class="parallax">
+    <h1>Advice</h1>
+</div>
+<!--content-->
+<div class="content">
+<h2>Don't be afraid of failurs</h2>
+Every person fail. Don't feel shame of it. You must learn from your mistakes, otherwise they will be repeated again and again. Even though, there can be many failurs, one day it will be a brilliant result. So, don't give up. Here is my burn't cottage cheese pancake, still looks cute(click on image):<br>
+<!--image that latter will be changed by click-->
+<img id="change-img" src="Images/burnt-pancake.jpeg" alt="burnt-pancakes">
+<h2>Always taste</h2>
+While preparing food, taste it to fix something while process and not to be disappointed in the end.<br>
+<img class="advice-img" src="Images/taste.gif" alt="tasting">
+<h2>Try new</h2>
+Once you become profficient in frying something, try baking. Don't be stuck on only dish, the cuisine is so vary, you will never find the end of it.<br>
+<img class="advice-img" src="Images/learn.jpeg" alt="learning">
+<h2>Never leave plates, pots and other empty dishes or with food on the stove</h2>
+In most cases, a stove is an electrical device that can be turned on accidentally by you or your family. This will allow you to avoid burning and smoke that no one needs, which will immediately fill your entire apartment.
+<img class="advice-img" src="Images/fire.jpeg" alt="fire">
+</div>
+
+<!--footer-->
+<footer>
+    <div class="footer-items">
+        <div class="row">
+            <!--site map-->
+            <div class="col" id="footer-navigation">
+                <ul>
+                    <li><h3>Site map</h3></li>
+                    <li><a href="mainPage.html">Main</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="Recipies.html">Recipies</a></li>
+                    <li><a href="advice.html">Advice</a></li>
+                </ul>
+            </div>
+            <!--list for social media-->
+            <div class="col" id="socialMedia">
+                <ul>
+                    <li><h3>Social media</h3></li>
+                    <li><a href="https://www.instagram.com/vlada_fursa"><i class="fab fa-instagram"></i>vlada_fursa</a></li>
+                    <li><a href="https://vk.com/vlada_fursa"><i class="fab fa-vk"></i>vlada_fursa</a></li>
+                    <li><a href="https://t.me/VladaFursa"><i class="fab fa-telegram"></i>VladaFursa</a></li>
+                </ul>
+            </div>    
+        </div>
+    </div>
+</footer>
+<!--jQuery library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" charset="utf-8"></script>
+<!--script-->
+<script src="scripts/cuisine.js"></script>
+</body>
+</html>
