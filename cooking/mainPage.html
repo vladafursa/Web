@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking website</title>
+  <!--link to styling-->
+  <link rel="stylesheet" href="stylesheet.css">
+    <!--link for icons-->
+  <script src="https://kit.fontawesome.com/b70fb90308.js" crossorigin="anonymous"></script>
+  <!--link from google fonts to upload a font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--sticky menu with navigation on it-->
+<div class="sticky">
+    <div class="menu-btn"> 
+          <!--icom of menu-->
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <!--closing icon-->
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+           <div class="menu">
+            <!--inline style to avoid changing by other classes-->
+            <div class="logo-side"><img src="Images/logo-menu.png" width="120px" height="120px" alt="logo"></div>
+              <div class="item"><a href="mainPage.html"><i>Main</i></a></div>
+              <div class="item"><a href="history.html"><i>History</i></a></div>
+              <div class="item"><a href="Recipies.html"><i>Recipies</i></a></div>
+              <div class="item"><a href="advice.html"><i>Advice</i></a></div>
+            </div>
+          </div>
+    <div class="logo"> 
+        <!--inline style to avoid changing by other classes-->
+        <img src="Images/logo.png" width="100px" height="50px" alt="logo">
+    </div>
+</div>
+<!--parallax effect-->
+<div class="parallax" >
+    <h1>Cooking</h1>
+</div>
+<!--content-->
+<div class="content">
+<h1>Why learn cooking?</h1>
+First of all, let's determine what cooking means. Cooking is a process of preparing food for the next eating of it.<br>
+Everybody should know how to cook. Eventhough many restaurants exist, there can be a situation, when you will need to cook something. By cooking food yourself, you can choose ingredients yourself, make the food more healthy and cut out calories. Moreover, it saves money. Cooking isn't hard,on the contrary, it can be fun. Through this website you will easily learn how to cook.
+<br>
+<br>
+<!--scrolling images-->
+<div class="wrapper">
+    <i id="left" class="fas fa-arrow-left"></i>
+    <div class="carousel">
+        <img class="imgForScrolling" src="Images/dish1.jpeg" alt="image of the first dish">
+        <img class="imgForScrolling" src="Images/dish2.jpeg" alt="image of the second dish">
+        <img class="imgForScrolling" src="Images/dish3.jpeg" alt="image of the third dish">
+        <img class="imgForScrolling" src="Images/dish4.jpeg" alt="image of the fourth dish">
+    </div>
+    <i id="right" class="fas fa-arrow-right"></i>
+</div>
+</div>
+<!--footer-->
+<footer>
+    <div class="footer-items">
+        <div class="row">
+            <!--site map-->
+            <div class="col" id="footer-navigation">
+                <ul>
+                    <li><h3>Site map</h3></li>
+                    <li><a href="mainPage.html">Main</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="Recipies.html">Recipies</a></li>
+                    <li><a href="advice.html">Advice</a></li>
+                </ul>
+            </div>
+            <!--list for social media-->
+            <div class="col" id="socialMedia">
+                <ul>
+                    <li><h3>Social media</h3></li>
+                    <li><a href="https://www.instagram.com/vlada_fursa"><i class="fab fa-instagram"></i>vlada_fursa</a></li>
+                    <li><a href="https://vk.com/vlada_fursa"><i class="fab fa-vk"></i>vlada_fursa</a></li>
+                    <li><a href="https://t.me/VladaFursa"><i class="fab fa-telegram"></i>VladaFursa</a></li>
+                </ul>
+            </div>    
+        </div>
+    </div>
+</footer>
+<!--jQuery library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" charset="utf-8"></script>
+<!--script-->
+<script src="scripts/cuisine.js"></script>
+</body>
+</html>
