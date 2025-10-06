@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking website</title>
+    <!--link to styling-->
+  <link rel="stylesheet" href="stylesheet.css">
+    <!--link for icons-->
+  <script src="https://kit.fontawesome.com/b70fb90308.js" crossorigin="anonymous"></script>
+    <!--link from google fonts to upload a font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--sticky menu with navigation on it-->
+<div class="sticky">
+    <div class="menu-btn"> 
+            <!--icom of menu-->
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <!--closing icon-->
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+            <div class="menu">
+            <!--inline style to avoid changing by other classes-->
+            <div class="logo-side"><img src="Images/logo-menu.png" width="120px" height="120px" alt="logo"></div>
+                <div class="item"><a href="mainPage.html"><i>Main</i></a></div>
+                <div class="item"><a href="history.html"><i>History</i></a></div>
+                <div class="item"><a href="Recipies.html"><i>Recipies</i></a></div>
+                <div class="item"><a href="advice.html"><i>Advice</i></a></div>
+            </div>
+            </div>
+    <div class="logo"> 
+        <!--inline style to avoid changing by other classes-->
+        <img src="Images/logo.png" width="100px" height="50px" alt="logo">
+    </div>
+</div>
+<!--parallax effect-->
+<div class="parallax">
+    <h1>History of Cooking</h1>
+</div>
+<!--content-->
+<div class="historyPageContent">
+    <h1>A Brief History of Cooking : How It All Began</h1>
+    <br>
+    Have you ever thought how the history of cooking came to be? Probably never even had an idea of such question. Cooking has become an essential part of our every day life, so that we never had a question about how it all started. Well, cooking has a complex and interesting beginning, so let’s travel down the time machine and see how it all began!
+    <br>
+    <h2>No Fire, No Food</h2>
+    Cooking cannot exist without fire, so it’s logical that archeologists traced back to the first evidence of fire in caves. Traces of ash found in a South Africa cave suggest that our ancestral humans were controlling fire at least 1 million years ago, the time of our direct ancestor Homo erectus. Burnt bone fragments also found at this site suggest that Homo erectus was cooking meat. However, the oldest remains of obvious hearths are just 400,000 years old.
+    <br>
+    <img src="Images/ancient.jpg" alt="picture of how people used to cook in the past">
+    The Neanderthals who evolved from Homo erectus some 250,000 years ago certainly created fires, as hearths have been found at many Neanderthal sites, some containing burnt bones. We also know from analysing their dental plaque that Neanderthals spiced up their diets with herbs. But we don’t know whether they habitually cooked their food.
+    <br>
+    <h2>More Complicated Than Just Fire</h2>
+    While fire started it all, Cooking requires cognitive skills that go beyond controlling fire, such as the ability to resist the temptation to scoff the ingredients, patience, memory and an understanding of the transformation process. Still, scientists believed that our Homo Erectus had the cognitive and behavioural skills needed for cooking. 
+    <br>
+    <img src="Images/ancient Chinese food.jpeg" alt="ancient chinese cooking">
+    The earliest firm evidence that our own species was cooking dates back just 20,000 years, when the first pots were made in China. The scorch marks and soot on their outer surfaces point to their use as cooking utensils. Meanwhile, the traditional system of kitchen structure is believed to start from the 14th century, the time when European military armies had to be fed, thus cooks selected by ranks. 
+    <br>
+    <h2>A Few Breakthrough Later – Modern Cooking</h2>
+    In the 15th century, Europe began to use cast-iron stoves, several hundred years after the Chinese. In the middle of the century, more commodities moved all around the world, from chillies, aubergines, and other spices as recorded in Christopher Columbus’ journal.
+    <br>
+    Around the 1400’s, the world saw caviar, along with pork dishes in several forms ( sausages, pates, etc). Spice trading grew stronger as did more items globally until the 16th century. In the 17 century, chocolate houses were introduced, as well as more social use of alcohol, and coffee. But it won’t be until the 18th century that we have a canning process, which was a big development in the food industry. 
+    <br>
+    <img src="Images/cooking in the 17th century.jpg" alt="cooking in the 17th century">
+    Experimental cooking blossomed around the turn of the 21st century which has been a fascinating development in the history of food and eating. Auguste Escoffier, the founder of modern cuisine, is believed to have elevated cooking to an art and a profession that one can be proud of. There are also a great number of kitchen artists who continue to redefine cooking and food, for many years to come!
+   <br>
+</div>
+<!--quiz-->
+<div class="app">
+    <h1>Quiz!</h1>
+    <h2 id="question">Question:</h2>
+    <div id="answer-buttons">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+    </div>
+    <button id="next-btn">Next</button>
+</div>
+<!--footer-->
+<footer>
+    <div class="footer-items">
+        <div class="row">
+            <!--site map-->
+            <div class="col" id="footer-navigation">
+                <ul>
+                    <li><h3>Site map</h3></li>
+                    <li><a href="mainPage.html">Main</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="Recipies.html">Recipies</a></li>
+                    <li><a href="advice.html">Advice</a></li>
+                </ul>
+            </div>
+            <!--list for social media-->
+            <div class="col" id="socialMedia">
+                <ul>
+                    <li><h3>Social media</h3></li>
+                    <li><a href="https://www.instagram.com/vlada_fursa"><i class="fab fa-instagram"></i>vlada_fursa</a></li>
+                    <li><a href="https://vk.com/vlada_fursa"><i class="fab fa-vk"></i>vlada_fursa</a></li>
+                    <li><a href="https://t.me/VladaFursa"><i class="fab fa-telegram"></i>VladaFursa</a></li>
+                </ul>
+            </div>    
+        </div>
+    </div>
+</footer>
+<!--jQuery library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" charset="utf-8"></script>
+<!--script-->
+<script src="scripts/cuisine.js"></script>
+</body>
+</html>

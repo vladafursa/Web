@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="calculator.css">
+    <title>calculator</title>
+</head>
+<body>
+<table>
+    <tr>
+        <form method="POST">
+       <th> 
+        <label for "x">X:</label>
+        <input name="x" type="number" id="x"></number>
+       </th>
+       <th>
+        <label for "y">Y:</label>
+        <input name="y" type="number" id="y"></number> 
+       </th> 
+    </form>
+    </tr>
+    <tr>
+        <th><button id="sum" onclick="sum()">+</button></th>
+        <th><button id="multiplication" onclick="multiplication()">*</button></th>
+    </tr>
+    <tr>
+        <th><button id="power" onclick="power()">x^y</button></th>
+        <th> <button id="division" onclick="division()">/</button></th>
+    </tr>
+    
+   <tr>
+    <th> <button id="remainder" onclick="remainder()">%</button></th>
+    <th> <button id="sub" onclick="sub()">-</button></th>
+   </tr>
+   
+   <tr>
+    <th colspan="2">
+        <label for "result">Result:</label><br>
+        <input name="result" type="number" id="result"></number>
+    </th>
+</tr>
+</table>
+    <script src="calculator.js"></script>
+</body>
+</html>
